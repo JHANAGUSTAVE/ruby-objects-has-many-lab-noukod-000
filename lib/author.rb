@@ -1,5 +1,5 @@
 class Author 
-  attr_accessor :name
+  attr_accessor :name, :posts
   @@post_count = 0 
   
   
@@ -13,8 +13,6 @@ class Author
     post.artist = self
     @@post_count +=1
   end
-  
-  
   
   def add_post_by_title
     post = post.new(name)
